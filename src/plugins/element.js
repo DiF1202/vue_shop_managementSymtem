@@ -1,7 +1,7 @@
 /*
  * @Author: your name
- * @Date: 2021-08-31 00:51:03
- * @LastEditTime: 2021-09-01 20:16:33
+ * @Date: 2021-09-01 20:40:30
+ * @LastEditTime: 2021-09-04 01:57:15
  * @LastEditors: your name
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\plugins\element.js
@@ -35,7 +35,11 @@ import {
     Tag,
     Tree,
     Select,
-    Option
+    Option,
+    Cascader,
+    Alert,
+    Tabs,
+    TabPane
 } from 'element-ui'
 
 Vue.use(Button)
@@ -64,6 +68,10 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Cascader)
+Vue.use(Alert)
+Vue.use(Tabs)
+Vue.use(TabPane)
 
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm

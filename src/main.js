@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-08-30 19:45:32
- * @LastEditTime: 2021-08-31 15:53:12
+ * @LastEditTime: 2021-09-03 00:48:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\main.js
@@ -14,6 +14,7 @@ import './plugins/element.js'
 import './assets/fonts/iconfont.css'
 //导入全局样式表
 import './assets/css/global.css'
+import TreeTable from 'vue-table-with-tree-grid'
 
 import axios from 'axios'
 //配置请求的根路径
@@ -25,6 +26,7 @@ axios.interceptors.request.use(config => {
   return config
 })
 
+Vue.component('tree-table', TreeTable)
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
 new Vue({
