@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-08-30 19:45:32
- * @LastEditTime: 2021-09-03 00:14:26
+ * @LastEditTime: 2021-09-04 11:20:14
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\router.js
@@ -15,6 +15,8 @@ import Users from './components/user/Users.vue'
 import Rights from './components/power/Rights.vue'
 import Roles from './components/power/Roles.vue'
 import Cate from './components/goods/Cate.vue'
+import Params from './components/goods/Params.vue'
+
 Vue.use(Router)
 
 const router = new Router({
@@ -31,6 +33,7 @@ const router = new Router({
         { path: '/rights', component: Rights },
         { path: '/roles', component: Roles },
         { path: '/categories', component: Cate },
+        { path: '/params', component: Params },
       ]
     }
   ]

@@ -1,11 +1,3 @@
-/*
- * @Author: your name
- * @Date: 2021-09-01 20:40:30
- * @LastEditTime: 2021-09-04 01:57:15
- * @LastEditors: your name
- * @Description: In User Settings Edit
- * @FilePath: \vue_shop\src\plugins\element.js
- */
 import Vue from 'vue'
 import {
     Button,
