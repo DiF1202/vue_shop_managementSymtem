@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-31 00:28:59
- * @LastEditTime: 2021-09-08 16:54:41
+ * @LastEditTime: 2021-09-08 18:34:16
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\components\home.vue
@@ -12,7 +12,7 @@
     <el-header>
       <div class="logobox">
         <img src="../assets/fudalogo.png" alt="" />
-        <span>小何后台管理系统</span>
+        <span>Di迪后台管理系统</span>
       </div>
       <el-button type="info" @click="logout">退出</el-button>
     </el-header>
