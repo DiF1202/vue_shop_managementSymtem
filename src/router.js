@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-08-30 19:45:32
- * @LastEditTime: 2021-09-05 02:14:00
+ * @LastEditTime: 2021-09-06 03:25:31
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\router.js
@@ -18,6 +18,7 @@ import Cate from './components/goods/Cate.vue'
 import Params from './components/goods/Params.vue'
 import GoodsList from './components/goods/List.vue'
 import Add from './components/goods/Add.vue'
+import Order from './components/order/Order.vue'
 Vue.use(Router)
 
 const router = new Router({
@@ -36,7 +37,8 @@ const router = new Router({
         { path: '/categories', component: Cate },
         { path: '/params', component: Params },
         { path: '/goods', component: GoodsList },
-        { path: '/goods/add', component: Add }
+        { path: '/goods/add', component: Add },
+        { path: '/orders', component: Order }
       ]
     }
   ]

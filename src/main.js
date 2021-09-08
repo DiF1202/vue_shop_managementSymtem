@@ -1,7 +1,7 @@
 /*
  * @Author: your name
- * @Date: 2021-09-04 02:17:04
- * @LastEditTime: 2021-09-05 21:58:37
+ * @Date: 2021-08-30 17:35:07
+ * @LastEditTime: 2021-09-08 10:46:27
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\main.js
@@ -16,12 +16,12 @@ import './assets/fonts/iconfont.css'
 import './assets/css/global.css'
 import TreeTable from 'vue-table-with-tree-grid'
 
-//导入富本文编辑器
+// 导入富文本编辑器
 import VueQuillEditor from 'vue-quill-editor'
-//导入富文本编辑器对应的样式
-import 'quill/dist/quill.core.css' // import styles
-import 'quill/dist/quill.snow.css' // for snow theme
-import 'quill/dist/quill.bubble.css' // for bubble theme
+// require styles 导入富文本编辑器对应的样式
+import 'quill/dist/quill.core.css'
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css'
 
 import axios from 'axios'
 // 配置请求的跟路径
@@ -37,8 +37,9 @@ Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
 Vue.component('tree-table', TreeTable)
-//将富文本编辑器，注册为全局可用的组件
+// 将富文本编辑器，注册为全局可用的组件
 Vue.use(VueQuillEditor)
+
 Vue.filter('dateFormat', function (originVal) {
   const dt = new Date(originVal)
 
