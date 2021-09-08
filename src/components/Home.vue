@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-31 00:28:59
- * @LastEditTime: 2021-08-31 18:15:24
+ * @LastEditTime: 2021-09-08 16:54:41
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\components\home.vue
@@ -10,9 +10,9 @@
   <el-container class="home-container">
     <!-- 头部区域 -->
     <el-header>
-      <div>
-        <img src="../assets/heima.png" alt="" />
-        <span>电商后台管理系统</span>
+      <div class="logobox">
+        <img src="../assets/fudalogo.png" alt="" />
+        <span>小何后台管理系统</span>
       </div>
       <el-button type="info" @click="logout">退出</el-button>
     </el-header>
@@ -158,5 +158,13 @@ export default {
   text-align: center;
   letter-spacing: 0.2em;
   cursor: pointer;
+}
+.logobox {
+  img {
+    height: 61px;
+    width: 61px;
+    border-radius: 50%;
+    background-color: #eee;
+  }
 }
 </style>

@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-30 19:53:32
- * @LastEditTime: 2021-08-31 00:27:44
+ * @LastEditTime: 2021-09-08 17:07:40
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\components\Login.vue
@@ -53,21 +53,31 @@ export default {
       //这是登录表单的数据绑定对象
       loginForm: {
         username: 'admin',
-        password: '123456'
+        password: '123456',
       },
       //这是表单的验证规律对象
       loginFormRules: {
         //验证用户名是否合法
         username: [
           { required: true, message: '请输入登录名称', trigger: 'blur' },
-          { min: 3, max: 10, message: '长度在 3 到 10 个字符', trigger: 'blur' }
+          {
+            min: 3,
+            max: 10,
+            message: '长度在 3 到 10 个字符',
+            trigger: 'blur',
+          },
         ],
         //验证密码是否合法
         password: [
           { required: true, message: '请输入登录密码', trigger: 'blur' },
-          { min: 6, max: 15, message: '长度在 3 到 15 个字符', trigger: 'blur' }
-        ]
-      }
+          {
+            min: 6,
+            max: 15,
+            message: '长度在 3 到 15 个字符',
+            trigger: 'blur',
+          },
+        ],
+      },
     }
   },
   methods: {
@@ -76,7 +86,7 @@ export default {
       this.$refs.loginFormRef.resetFields()
     },
     login() {
-      this.$refs.loginFormRef.validate(async valid => {
+      this.$refs.loginFormRef.validate(async (valid) => {
         if (!valid) return
         const { data: res } = await this.$http.post('login', this.loginForm)
         if (res.meta.status !== 200) return this.$message.error('登陆失败')
@@ -88,15 +98,15 @@ export default {
         // 2. 通过编程式导航跳转到后台主页，路由地址是 /home
         this.$router.push('/home')
       })
-    }
-  }
+    },
+  },
 }
 </script>
 
 <style lang="less" scoped>
 .login_container {
   height: 100%;
-  background-color: #2b4b6b;
+  background: linear-gradient(#243949, #517fa4);
 }
 .login_box {
   width: 450px;
